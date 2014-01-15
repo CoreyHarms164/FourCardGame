@@ -16,8 +16,8 @@ public class Card {
 	}
 	
 	public String toString(){
-		String[] r = {"blank", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
-				"Jack", "Queen", "King"};
+		String[] r = {"blank", "blank", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+				"Jack", "Queen", "King", "Ace"};
 		String[] s = {"Clubs", "Diamonds", "Hearts", "Spades"};
 		
 		//return r[this.rank] + " of " + s[this.suite]; 

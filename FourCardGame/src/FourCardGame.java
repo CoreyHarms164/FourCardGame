@@ -427,41 +427,28 @@ public class FourCardGame extends JFrame {
 			
 			if(!topLeft.isEmpty()){
 				if(cc.isSameSuite(tl)){
-					if(topLeft.isAce()){
+					if(cc.rank < topLeft.showTopCard().rank){
 						isLegal = true;
-					}
-					else if(cc.rank < topLeft.showTopCard().rank){
-						isLegal = true;
-					}
-					
+					}	
 				}
 			}
 			if(!topRight.isEmpty()){
 				if(cc.isSameSuite(tr)){
-					if(topRight.isAce()){
-						isLegal = true;
-					}
-					else if(cc.rank < topRight.showTopCard().rank){
+					if(cc.rank < topRight.showTopCard().rank){
 						isLegal = true;
 					}
 				}
 			}
 			if(!bottomLeft.isEmpty()){
 				if(cc.isSameSuite(bl)){
-					if(bottomLeft.isAce()){
-						isLegal = true;
-					}
-					else if(cc.rank < bottomLeft.showTopCard().rank){
+					if(cc.rank < bottomLeft.showTopCard().rank){
 						isLegal = true;
 					}
 				}
 			}
 			if(!bottomRight.isEmpty()){
 				if(cc.isSameSuite(br)){
-					if(bottomRight.isAce()){
-						isLegal = true;
-					}
-					else if(cc.rank < bottomRight.showTopCard().rank){
+					if(cc.rank < bottomRight.showTopCard().rank){
 						isLegal = true;
 					}
 				}

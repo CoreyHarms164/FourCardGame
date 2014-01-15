@@ -9,7 +9,7 @@ public class Deck{
 		nextCard = 0;
 		int cardCount = 0;
 		for(int i = 0; i <= 3; i ++){
-			for(int k = 1; k <= 13; k++){
+			for(int k = 2; k <= 14; k++){
 				deck[cardCount] = new Card(k, i);
 				cardCount ++;
 			}
